@@ -1,40 +1,109 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <title>Erie Insurance Project</title>
-        <meta charset="UTF-8" />
-        <link rel="stylesheet" type="text/css" href="erie.css" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet" />
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="script.js"></script>
+        
+        <script src="https://kit.fontawesome.com/2b9cdc1c9a.js" crossorigin="anonymous"></script>
+        <title>Erie Insurance Web Redisgn Project</title>
     </head>
     <body>
-        <h1>Erie Incurance WebDesign Project</h1>
-        <h2>About the Project</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis rutrum tristique.
-            Cras sed nisl augue. Vivamus aliquet eleifend sapien, ut viverra purus mattis ut.
-            Integer volutpat porta ante, vitae maximus nulla consectetur eu. Nunc tincidunt tortor
-            id facilisis pellentesque. Cras efficitur quis ligula sit amet commodo. Maecenas ornare,
-            orci et accumsan ultrices, dolor ligula sagittis metus, non ultrices enim odio vitae
-            quam. Pellentesque non suscipit libero, vel volutpat risus. Proin vel venenatis felis.
-            Fusce vulputate justo vel convallis tempus. Nam ut lorem sodales, commodo lacus id,
-            tempor felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-            cubilia curae; Aliquam tempus gravida nunc. Proin et interdum sem.</p>
-        <div class="flex">
-            <figure>
-                <a href="dictionary.html">Dictionary</a>
-            </figure>
-            <figure>
-                <a href="deductible.html">Deductible</a>
-            </figure>
-        </div>
-        <h2>The Process</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis rutrum tristique.
-            Cras sed nisl augue. Vivamus aliquet eleifend sapien, ut viverra purus mattis ut.
-            Integer volutpat porta ante, vitae maximus nulla consectetur eu. Nunc tincidunt tortor
-            id facilisis pellentesque. Cras efficitur quis ligula sit amet commodo. Maecenas ornare,
-            orci et accumsan ultrices, dolor ligula sagittis metus, non ultrices enim odio vitae
-            quam. Pellentesque non suscipit libero, vel volutpat risus. Proin vel venenatis felis.
-            Fusce vulputate justo vel convallis tempus. Nam ut lorem sodales, commodo lacus id,
-            tempor felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-            cubilia curae; Aliquam tempus gravida nunc. Proin et interdum sem.</p>
+        <section id="home-page">
+            <div class="homeTitle">
+                <div class="menu" id="myMenu">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="#homeContent">About</a>
+                    <a href="#">Dictionary</a>
+                    <a href="#">Deductible</a>
+                    <a href="javascript:void(0);" class="icon" onclick="Menubar()">
+                        <i class="fa fa-bars"></i>
+                      </a>
+                </div>
+                <h1>Erie Insurance </br>Webpage Redisgn</h1>
+                <p class="participants">
+                    <span>Felipe Bassi</span>
+                    <span>Savannah Ricks</span>
+                </p>
+                <div id="scroll-down" class="demo">
+                    <a href="#homeContent"><span></span></a>
+                </div>
+            </div>
+            <div id="homeContent">
+                <div class="intro">
+                    <div class="about">
+                        <h2><i class="fa-solid fa-list-check fa-sm"></i> About the Project</h2>
+                        <p>This Open Lab project between Erie Insurance and the DIGIT 400 class consisted in redisgning an improved website structure to optimize navigation and access to the insurance terms dictonary page. Furthermore, we decided to improve the User Interface of the dictionary page itself, and provided a prototype of a more efficient layout of an insurance term page. The main idea behind these updates is to display the content when the user demands it, instead of overwhelming the user with text and information that is no use to them.</p>
+                    </div>
+                    <div class="website">
+                        <h2><i class="fa-solid fa-globe fa-sm"></i> This Website</h2>
+                        <p>This website will guide you through the entire project and showcase all our proposed changes and updates as well as comparisons between the current design and the new one. This specific page serves as the homepage, it gives an overview of the project and all of our changes, and will also allow you to navigate throughout the project</p>
+                    </div>
+                </div>
+                <div class="showcase">
+                    <div class="accessibility">
+                        <h2><i class="fa-regular fa-compass fa-sm"></i> Accessibility & Navigation</h2>
+                        <div class="content">
+                            <div class="row">
+                                <div class="left">
+                                    <p>When we were going through the purpose of a page like the insurance dictionary, we concluded that all the term's definitions should be accessible everytime that specific term shows up in the website. Meaning that if a user is reading through their policy, they should be able, without leaving the page they are in, to learn what all the terms in their coverage mean. This is a subtle way of providing accessibility to the insurance dictionary page throughout the rest website.</p>
+                                </div>
+                                <div class="right">
+                                    <video autoplay loop muted class="small-video large-video">
+                                      <source src="multimedia/Policy-hover.mp4" type="video/mp4">
+                                      Your browser does not support the video tag.
+                                    </video>
+                                  </div>
+                                  
+                            </div>
+                            <div class="row">
+                                <div class="left">
+                                    <p>The second problem we noticed when we started this project is the actual accessibility of the insurance dictionary page. We realized that it wasn't anywhere on the website's menu, and if you looked for it in the search bar it wouldn't appear as well. The only way we found to access the dictionary page was by searching for a term, opening the term's page, and only then we found the 'Insurance Dictionary' link. This is an effort most users wouldn't be willing to go through and would most likely abandon the website.</p>
+                                </div>
+                                <div class="right">
+                                    <video autoplay loop muted class="small-video large-video">
+                                      <source src="multimedia/Hover-Menu.mp4" type="video/mp4">
+                                      Your browser does not support the video tag.
+                                    </video>
+                                  </div>                                  
+                            </div>
+                        </div>
+                    </div>                    
+                    
+                    <div class="layout">
+                        <h2><i class="fa-solid fa-filter fa-sm"></i> Filters & Layout</h2>
+                        <div class="text">
+                            <p>Besides the accessibility and navigation updates for the insurance dictionary page, we also decided to improve the user interface and the interactivity of both the dictionary, and a specific term's page. For the dictionary page we came up with a simple solution to save the user time and effort of scrolling through the terms, by adding an ABC filter at the top of the page. With this feature, the user can easily find the term they are looking for by clicking the first letter of their word on the filter. For the specific term page we chose to redisgn the <a href="https://www.erieinsurance.com/insurance-dictionary/deductible">Deductible</a> page by adding interactive features like a read more + button on the FAQ, a scroll progress bar, and a back to top button. These changes make a more efficient and interactive layout overall, which will therefore improve the user experience.</p>
+                            <div class="contrast">
+                                <div class="column">
+                                    <div class="left">
+                                        <h3>Old Layout</h3>
+                                    </div>
+                                    <div class="left deductible">
+                                        <video autoplay loop muted class="small-video large-video">
+                                          <source src="multimedia/Old-Deductible.mp4" type="video/mp4">
+                                          Your browser does not support the video tag.
+                                        </video>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="right">
+                                        <h3>New Layout</h3>
+                                    </div>
+                                    <div class="right deductible">
+                                        <video autoplay loop muted class="small-video large-video">
+                                          <source src="multimedia/Old-Deductible.mp4" type="video/mp4">
+                                          Your browser does not support the video tag.
+                                        </video>
+                                    </div>                                  
+                                </div>
+                                <a href="#" class="go-top">Go Top</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>           
+            </div>    
+        </section>
     </body>
 </html>
