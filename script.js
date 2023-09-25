@@ -1,12 +1,26 @@
-document.addEventListener("DOMContentLoaded", function () {
-    function Menubar() {
-        var x = document.getElementById("myMenu");
-        if (x.className === "menu") {
-            x.className += " responsive";
-        } else {
-            x.className = "menu";
-        }
+function Menubar() {
+    var x = document.getElementById("myMenu");
+    if (x.className === "menu") {
+        x.className += " responsive";
+    } else {
+        x.className = "menu";
     }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const currentPath = window.location.pathname;
+
+    const menuLinks = document.querySelectorAll(".menu a");
+
+    menuLinks.forEach(function (link) {
+        if (link.getAttribute("href") === currentPath) {
+            link.classList.add("active");
+        } else {
+            link.classList.remove("active");
+        }
+    });
+
 
     let mybutton = document.getElementById("myBtn");
 
@@ -25,7 +39,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // Add this line to attach topFunction to the button's click event
     mybutton.addEventListener("click", topFunction);
 
     function topFunction() {
@@ -43,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 },
                 500
             );
-            Menubar(); // Close the mobile menu when a link is clicked
+            Menubar(); 
         }
     });
 });
