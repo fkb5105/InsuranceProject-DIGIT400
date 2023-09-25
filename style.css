@@ -1,5 +1,5 @@
 html {
-    font-family: "Roboto Condensed";
+    font-family: 'Montserrat', sans-serif;
     width: 100%;
     height: 100%;
     scroll-behavior: smooth;
@@ -7,9 +7,6 @@ html {
 
 body {
     margin: 0;
-}
-#home-page{
-    background-color: rgb(209, 210, 211);
 }
 /* Navigation Menu CSS */
 .menu {
@@ -38,6 +35,7 @@ body {
 .menu a:hover {
     background-color: rgba(0, 97, 193, 0.3);
     cursor: pointer;
+    font-size: 22px;
 }
 
 .menu a.active {
@@ -75,7 +73,8 @@ body {
         right: 0;
         flex-direction: column; /* Display menu items in a column */
         align-items: center; /* Center items horizontally */
-        justify-content: flex-start; /* Align items to the top */
+        justify-content: flex-start;
+        background-color: rgba(0, 0, 0, .5); /* Align items to the top */
     }
 
     .menu.responsive .icon {
@@ -92,8 +91,10 @@ body {
     }
 }
 
-
-
+/* Homepage CSS */
+#home-page{
+    background-color: rgb(209, 210, 211);
+}
 .homeTitle {
     background-color: #005FAC;
     padding: 1.6rem;
@@ -103,7 +104,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 .homeTitle h1 {
     color: #ffffff;
     font-size: 5rem;
@@ -112,7 +112,6 @@ body {
     padding: 1.6rem;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
-
 .homeTitle .participants {
     font-size: 1.2rem;
     line-height: 2rem;
@@ -122,7 +121,11 @@ body {
     color: #FFFFFF;
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
-
+@media screen and (max-width:750px){
+    .homeTitle h1{
+        font-size: 3rem;
+    }
+}
 .homeTitle .participants span {
     display: inline-block;
 }
@@ -232,7 +235,6 @@ body {
     padding: 2rem;
     margin: 0 auto;
     background-color: #ffffff;
-    text-align: justify;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -241,6 +243,7 @@ body {
     font-weight: thin;
     line-height: 1.4rem;
     letter-spacing: 0.5px;
+    text-align: justify;
 }
 /* Line under the h2 text */
 #homeContent h2 {
@@ -358,5 +361,77 @@ body {
 	background-color: rgba(0, 0, 0, 0.6);
 }
 /* End of back to top button */
+/* End of Homepage */
 
+/* Dictionary Page */
+.dicTitle{
+    background-color: #005FAC;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dicTitle h1{
+    font-size: 4rem;
+    text-align: center;
+    color: #ffffff;
+    margin: auto;
+    padding-top: 1.8rem;
+    font-weight: 400;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.dicContent{
+    max-width: 1025px;
+    margin: auto;
+    padding: 2rem;
+}
+.abcContent{
+    padding-right: 328px;
+}
+/* Style the ABC filter links */
+.abcFilter {
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: .2rem;
+    line-height: 1rem;
+    font-size: 1rem;
+}
+.filter-link {
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
 
+.filter-link::after {
+    content: " |"; /* Add a pipe symbol after each link */
+}
+
+.filter-link:last-child::after {
+    content: ""; /* Remove the pipe symbol after the last link */
+}
+.clearFilter button{
+    font-size: 1.2rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #000;
+    justify-content: center;
+    background-color: #fff;
+    border: 2px solid #000;
+    padding: 0.5rem;
+}
+/* Filter Ends */
+.term{
+    padding: 1rem;
+}
+.term h3{
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+.term p{
+    font-size: 1.2rem;
+    font-weight: 100;
+}
