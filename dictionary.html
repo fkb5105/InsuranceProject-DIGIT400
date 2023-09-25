@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat">
         <link rel="stylesheet" href="style.css" type="text/css">
         <script src="script.js"></script>
         
@@ -15,7 +15,7 @@
             <div class="dicTitle">
                 <div class="menu" id="myMenu">
                     <a href="index.html" class="active">Home</a>
-                    <a href="#homeContent">About</a>
+                    <a href="index.html#homeContent">About</a>
                     <a href="dictionary.html">Dictionary</a>
                     <a href="deductible.html">Deductible</a>
                     <a href="javascript:void(0);" class="icon" onclick="Menubar()">
@@ -138,47 +138,42 @@
         </section>
         <script>
             document.addEventListener("DOMContentLoaded", function() {
-    // Get all the filter links
-    const filterLinks = document.querySelectorAll(".filter-link");
+    
+            const filterLinks = document.querySelectorAll(".filter-link");
 
-    // Add click event listeners to each filter link
-    filterLinks.forEach(function(link) {
-        link.addEventListener("click", function(event) {
-            event.preventDefault();
+        
+            filterLinks.forEach(function(link) {
+                link.addEventListener("click", function(event) {
+                    event.preventDefault();
 
-            // Get the clicked letter
-            const letter = link.getAttribute("data-letter").toLowerCase();
+                    const letter = link.getAttribute("data-letter").toLowerCase();
 
-            // Hide all terms
-            const terms = document.querySelectorAll(".term");
-            terms.forEach(function(term) {
-                term.style.display = "none";
+                    const terms = document.querySelectorAll(".term");
+                    terms.forEach(function(term) {
+                        term.style.display = "none";
+                    });
+
+                    const filteredTerms = document.querySelectorAll(".term h3");
+                    filteredTerms.forEach(function(term) {
+                        if (term.textContent.charAt(0).toLowerCase() === letter) {
+                            term.parentElement.style.display = "block";
+                        }
+                    });
+                });
             });
 
-            // Show terms that start with the clicked letter
-            const filteredTerms = document.querySelectorAll(".term h3");
-            filteredTerms.forEach(function(term) {
-                if (term.textContent.charAt(0).toLowerCase() === letter) {
-                    term.parentElement.style.display = "block";
-                }
+    
+                const clearFilterButton = document.getElementById("clear-filter-button");
+
+                clearFilterButton.addEventListener("click", function(event) {
+                    event.preventDefault();
+
+                    const terms = document.querySelectorAll(".term");
+                    terms.forEach(function(term) {
+                        term.style.display = "block";
+                    });
+                });
             });
-        });
-    });
-
-    // Get the "Clear Filter" button
-    const clearFilterButton = document.getElementById("clear-filter-button");
-
-    // Add click event listener to clear the filter
-    clearFilterButton.addEventListener("click", function(event) {
-        event.preventDefault();
-
-        // Show all terms
-        const terms = document.querySelectorAll(".term");
-        terms.forEach(function(term) {
-            term.style.display = "block";
-        });
-    });
-});
 
         </script>
     </body>
