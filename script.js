@@ -8,43 +8,31 @@ function Menubar() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
+        let scrollTimeout;
+        let prevScrollPos = window.scrollY;
 
-    const currentPath = window.location.pathname;
+        const menu = document.getElementById("myMenu");
+        window.addEventListener("scroll", function () {
+            clearTimeout(scrollTimeout);
 
-    const menuLinks = document.querySelectorAll(".menu a");
+                scrollTimeout = setTimeout(function () {
+                    const currentScrollPos = window.scrollY;
 
-    menuLinks.forEach(function (link) {
-        if (link.getAttribute("href") === currentPath) {
-            link.classList.add("active");
-        } else {
-            link.classList.remove("active");
-        }
-    });
+                    if (currentScrollPos > prevScrollPos) {
+                        menu.style.transform = "translateY(-100%)";
+                    } else {
+                        menu.style.transform = "translateY(0)";
+                    }
 
+                    if (currentScrollPos > 0) {
+                        menu.classList.add("scrolled");
+                    } else {
+                        menu.classList.remove("scrolled");
+                    }
 
-    let mybutton = document.getElementById("myBtn");
-
-    window.onscroll = function () {
-        scrollFunction();
-    };
-
-    function scrollFunction() {
-        if (
-            document.body.scrollTop > 20 ||
-            document.documentElement.scrollTop > 20
-        ) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
-        }
-    }
-
-    mybutton.addEventListener("click", topFunction);
-
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
+                    prevScrollPos = currentScrollPos;
+                }, 15);
+            });
 
     $('a[href^="#"]').on("click", function (e) {
         e.preventDefault();
@@ -59,4 +47,6 @@ document.addEventListener("DOMContentLoaded", function () {
             Menubar(); 
         }
     });
+    
+
 });
