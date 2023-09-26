@@ -454,10 +454,3 @@ body {
 }
  
 /* Accessibility Page start */
-.accContent{
-    background-image: url('multimedia/error404.png');
-    background-attachment:fixed;
-	-webkit-background-size: cover;
-	background-size: cover;
-    
-} 

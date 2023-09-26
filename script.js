@@ -1,38 +1,38 @@
 function Menubar() {
     var x = document.getElementById("myMenu");
-    if (x.className === "menu") {
-        x.className += " responsive";
+    if (x.className.includes("scrolled")) {
+        x.classList.toggle("responsive");
     } else {
-        x.className = "menu";
+        x.classList.toggle("menu");
     }
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-        let scrollTimeout;
-        let prevScrollPos = window.scrollY;
+document.addEventListener("DOMContentLoaded", function () {    
+    let scrollTimeout;
+    let prevScrollPos = window.scrollY;
 
-        const menu = document.getElementById("myMenu");
-        window.addEventListener("scroll", function () {
-            clearTimeout(scrollTimeout);
+    const menu = document.getElementById("myMenu");
+    window.addEventListener("scroll", function () {
+        clearTimeout(scrollTimeout);
 
-                scrollTimeout = setTimeout(function () {
-                    const currentScrollPos = window.scrollY;
+        scrollTimeout = setTimeout(function () {
+            const currentScrollPos = window.scrollY;
 
-                    if (currentScrollPos > prevScrollPos) {
-                        menu.style.transform = "translateY(-100%)";
-                    } else {
-                        menu.style.transform = "translateY(0)";
-                    }
+            if (currentScrollPos > prevScrollPos) {
+                menu.style.transform = "translateY(-100%)";
+            } else {
+                menu.style.transform = "translateY(0)";
+            }
 
-                    if (currentScrollPos > 0) {
-                        menu.classList.add("scrolled");
-                    } else {
-                        menu.classList.remove("scrolled");
-                    }
+            if (currentScrollPos > 0) {
+                menu.classList.add("scrolled");
+            } else {
+                menu.classList.remove("scrolled");
+            }
 
-                    prevScrollPos = currentScrollPos;
-                }, 15);
-            });
+            prevScrollPos = currentScrollPos;
+        }, 15);
+    });
 
     $('a[href^="#"]').on("click", function (e) {
         e.preventDefault();
@@ -44,9 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 },
                 500
             );
-            Menubar(); 
+            Menubar(); // Toggle menu
         }
     });
-    
-
 });
