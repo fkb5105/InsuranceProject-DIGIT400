@@ -1,11 +1,12 @@
 function Menubar() {
     var x = document.getElementById("myMenu");
-    if (x.className.includes("scrolled")) {
+    if (x.classList.contains("scrolled")) {
         x.classList.toggle("responsive");
     } else {
-        x.classList.toggle("menu");
+        x.classList.toggle("responsive");
     }
 }
+
 
 document.addEventListener("DOMContentLoaded", function () {    
     let scrollTimeout;
