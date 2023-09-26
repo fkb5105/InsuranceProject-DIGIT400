@@ -119,7 +119,7 @@ body {
         flex-direction: column; 
         align-items: center; 
         justify-content: flex-start;
-        background-color: rgba(0, 0, 0, .5); 
+        background-color: rgba(0, 0, 0, .7); 
     }
 
     .menu.responsive .icon {
@@ -286,7 +286,7 @@ body {
 #homeContent p {
     font-size: 1.1rem;
     font-weight: thin;
-    line-height: 1.4rem;
+    line-height: 1.5rem;
     letter-spacing: 0.5px;
     text-align: justify;
 }
@@ -495,3 +495,12 @@ body {
     font-size: 1.2rem;
     font-weight: 100;
 }
+ 
+/* Accessibility Page start */
+.accContent{
+    background-image: url('multimedia/error404.png');
+    background-attachment:fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+    
+} 
