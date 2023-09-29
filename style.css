@@ -464,6 +464,22 @@ body {
 
 
 /* Deductible Page */
+
+/* The scroll indicator */
+.header {
+position: sticky;
+top: 0;
+  z-index: 1001;
+  width: 100%;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #33a3ff;
+  width: 0%;
+}
+
 .dedContent{
     max-width: 1025px;
     margin: auto;
@@ -505,19 +521,18 @@ body {
        
         
         /* Fixed sidenav, full height */
-        .sidenav {
+        .qanda {
         width: 100%;
         z-index: 1;
         top: 0;
         left: 0;
         background-color: #e6e6e6;
         overflow-x: hidden;
-        padding-top: 20px;
         }
         
         /* Style the sidenav links and the dropdown button */
-        .sidenav a, .dropdown-btn {
-        padding: 6px 8px 6px 16px;
+        .qanda a, .dropdown-btn {
+        padding: 8px 8px 8px 16px;
         text-decoration: none;
         font-size: 20px;
         display: block;
@@ -527,6 +542,7 @@ body {
         text-align: left;
         cursor: pointer;
         outline: none;
+        font-weight: bold;
         }
         
         
@@ -540,8 +556,13 @@ body {
         .dropdown-container {
         display: none;
         background-color: #ffffff;
-        padding-left: 8px;
+        margin-left: 8px;
+        margin-right: 8px;
+        margin-bottom: 8px;
+        padding: 10px 10px 10px 10px;
         }
+        .dropdown-container p{padding: 0;
+        margin: 0;}
         
         /* Optional: Style the caret down icon */
         .fa-caret-down {
@@ -551,8 +572,11 @@ body {
         
         /* Some media queries for responsiveness */
         @media screen and (max-height: 750px) {
-        .sidenav {padding-top: 15px;}
-        .sidenav a {font-size: 18px;}
+        .qanda {padding-top: 15px;}
+        .qanda a {font-size: 18px;}
         }
+        
+        .related > li {padding: 8px}
+        
         
 
