@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -12,10 +13,11 @@
     <body>
         <section id="home-page">
             <div class="homeTitle">
-                <div class="menu" id="myMenu">
+                <div id="myMenu" class="menu">
                     <a href="index.html" class="active">Home</a>
                     <a href="#homeContent">About</a>
                     <a href="dictionary.html">Dictionary</a>
+                    <a href="accessibility.html">Accessibility</a>
                     <a href="deductible.html">Deductible</a>
                     <a href="javascript:void(0);" class="icon" onclick="Menubar()">
                         <i class="fa fa-bars"></i>
@@ -29,9 +31,6 @@
                 <div id="scroll-down" class="demo">
                     <a href="#homeContent"><span></span></a>
                 </div>
-            </div>
-            <div class="btnContainer">
-                <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-angles-up fa-3x custom-bounce"></i></button>
             </div>
             <div id="homeContent">
                 <div class="intro">
@@ -53,10 +52,11 @@
                                     <p>When we were going through the purpose of a page like the insurance dictionary, we concluded that all the term's definitions should be accessible everytime that specific term shows up in the website. Meaning that if a user is reading through their policy, they should be able, without leaving the page they are in, to learn what all the terms in their coverage mean. This is a subtle way of providing accessibility to the insurance dictionary page throughout the rest website.</p>
                                 </div>
                                 <div class="right">
-                                    <video autoplay loop muted class="small-video large-video">
+                                    <video id="myVideo" autoplay loop muted class="small-video large-video">
                                       <source src="multimedia/Policy-hover.mp4" type="video/mp4">
                                       Your browser does not support the video tag.
                                     </video>
+                                    <div id="playButton" class="play-button"></div>
                                   </div>
                                   
                             </div>
@@ -66,9 +66,10 @@
                                 </div>
                                 <div class="right">
                                     <video autoplay loop muted class="small-video large-video">
-                                      <source src="multimedia/Hover-Menu.mp4" type="video/mp4">
+                                      <source id="myVideo" src="multimedia/Hover-Menu.mp4" type="video/mp4">
                                       Your browser does not support the video tag.
                                     </video>
+                                    <div id="playButton" class="play-button"></div>
                                   </div>                                  
                             </div>
                         </div>
@@ -84,10 +85,11 @@
                                         <h3>Old Layout</h3>
                                     </div>
                                     <div class="left deductible">
-                                        <video autoplay loop muted class="small-video large-video">
+                                        <video id="myVideo" autoplay loop muted class="small-video large-video">
                                           <source src="multimedia/Old-Deductible.mp4" type="video/mp4">
                                           Your browser does not support the video tag.
                                         </video>
+                                        <div id="playButton" class="play-button"></div>
                                     </div>
                                 </div>
                                 <div class="column">
@@ -95,10 +97,11 @@
                                         <h3>New Layout</h3>
                                     </div>
                                     <div class="right deductible">
-                                        <video autoplay loop muted class="small-video large-video">
+                                        <video id="myVideo" autoplay loop muted class="small-video large-video">
                                           <source src="multimedia/Old-Deductible.mp4" type="video/mp4">
                                           Your browser does not support the video tag.
                                         </video>
+                                        <div id="playButton" class="play-button"></div>
                                     </div>                                  
                                 </div>
                             </div>
@@ -107,5 +110,25 @@
                 </div>           
             </div>    
         </section>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const video = document.getElementById("myVideo");
+                const playButton = document.getElementById("playButton");
+    
+                playButton.addEventListener("click", function () {
+                    if (video.paused) {
+                        video.play();
+                        playButton.style.display = "none";
+                    } else {
+                        video.pause();
+                        playButton.style.display = "block";
+                    }
+                });
+    
+                video.addEventListener("ended", function () {
+                    playButton.style.display = "block";
+                });
+            });
+        </script>
     </body>
 </html>
