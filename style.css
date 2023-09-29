@@ -8,7 +8,7 @@ body {
     margin: 0;
     overflow-x: hidden;
 }
-  
+
 /* Navigation Menu CSS */
 .menu {
     overflow: hidden;
@@ -24,7 +24,7 @@ body {
 }
 
 .menu.scrolled {
-    background-color: rgba(0, 62, 124, 0.8); 
+    background-color: rgba(0, 62, 124, 0.8);
 }
 
 .menu a {
@@ -32,7 +32,7 @@ body {
     color: #f2f2f2;
     text-align: center;
     padding: 20px;
-    text-decoration: none; 
+    text-decoration: none;
     font-size: 20px;
     transition: all ease 0.5s;
     letter-spacing: 2px;
@@ -52,16 +52,18 @@ body {
 }
 
 /* End of navigation menu */
-@media screen and (max-width: 959px){
-    .menu a:not(:first-child) {display: none;}
+@media screen and (max-width : 959px) {
+    .menu a:not(:first-child) {
+        display: none;
+    }
     .menu a.icon {
-      float: right;
-      display: block;
+        float: right;
+        display: block;
     }
 }
-@media screen and (max-width: 959px) {
+@media screen and (max-width : 959px) {
     .menu a:not(:first-child) {
-        display: none; 
+        display: none;
     }
 
     .menu a.icon {
@@ -73,10 +75,10 @@ body {
         top: 0;
         left: 0;
         right: 0;
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column;
+        align-items: center;
         justify-content: flex-start;
-        background-color: rgba(0, 0, 0, .7); 
+        background-color: rgba(0, 0, 0, .7);
     }
 
     .menu.responsive .icon {
@@ -94,7 +96,7 @@ body {
 }
 
 /* Homepage CSS */
-#home-page{
+#home-page {
     background-color: rgb(209, 210, 211);
 }
 .homeTitle {
@@ -123,8 +125,8 @@ body {
     color: #FFFFFF;
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
-@media screen and (max-width:768px){
-    .homeTitle h1{
+@media screen and (max-width : 768px) {
+    .homeTitle h1 {
         font-size: 3rem;
     }
 }
@@ -160,7 +162,7 @@ body {
 /* Scroll Down CSS */
 #scroll-down {
     position: absolute;
-    bottom: 20px; 
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     color: #e5e5e5;
@@ -169,7 +171,7 @@ body {
 
 #scroll-down a span {
     position: absolute;
-    top: -70px; 
+    top: -70px;
     left: 50%;
     width: 46px;
     height: 46px;
@@ -178,7 +180,7 @@ body {
     border-radius: 100%;
     box-sizing: border-box;
 }
-  #scroll-down a span::after {
+#scroll-down a span::after {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -191,8 +193,8 @@ body {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     box-sizing: border-box;
-  }
-  #scroll-down a span::before {
+}
+#scroll-down a span::before {
     position: absolute;
     top: 0;
     left: 0;
@@ -200,14 +202,14 @@ body {
     content: '';
     width: 44px;
     height: 44px;
-    box-shadow: 0 0 0 0 rgba(255,255,255,.1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, .1);
     border-radius: 100%;
     opacity: 0;
     -webkit-animation: sdb 3s infinite;
     animation: sdb 3s infinite;
     box-sizing: border-box;
-  }
-  @-webkit-keyframes sdb {
+}
+@-webkit-keyframes sdb {
     0% {
       opacity: 0;
     }
@@ -222,7 +224,7 @@ body {
       opacity: 0;
     }
   }
-  @keyframes sdb {
+@keyframes sdb {
     0% {
       opacity: 0;
     }
@@ -257,15 +259,15 @@ body {
 #homeContent h2 {
     font-size: 2.2rem;
     padding: 0.7rem;
-    display: inline-block; 
-    border-bottom: 3px solid #005FAC; 
+    display: inline-block;
+    border-bottom: 3px solid #005FAC;
     border-radius: 3px;
 }
-@media screen and (max-width:768px){
-    #homeContent h2{
+@media screen and (max-width : 768px) {
+    #homeContent h2 {
         font-size: 1.8rem;
     }
-    #homeContent p{
+    #homeContent p {
         font-size: 1rem;
         text-align: left;
     }
@@ -296,22 +298,22 @@ body {
 }
 .right {
     flex-basis: 50%;
-    display: flex; 
-    justify-content: center; 
+    display: flex;
+    justify-content: center;
     margin: auto;
     padding: 1rem;
 }
 .small-video {
-    max-width: 100px; 
+    max-width: 100px;
     max-height: 300px;
     margin-top: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 .large-video {
     max-width: 350px;
 }
 
-.deductible{
+.deductible {
     justify-content: center;
     display: flex;
     max-height: 250px;
@@ -322,11 +324,11 @@ body {
 
 .contrast {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     margin-bottom: 2rem;
 }
 .column {
-    width: 50%; 
+    width: 50%;
     box-sizing: border-box;
     padding: 1rem;
 }
@@ -335,22 +337,22 @@ body {
     font-size: 1.6rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width : 768px) {
     .contrast {
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column;
+        align-items: center;
     }
 
     .column {
-        width: 100%; 
-        margin-bottom: 1rem; 
+        width: 100%;
+        margin-bottom: 1rem;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width : 768px) {
     .row {
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
         align-items: flex-start;
         width: 100%;
     }
@@ -360,10 +362,10 @@ body {
     .right {
         padding: 1rem;
     }
-    .large-video{
+    .large-video {
         max-width: 250px;
     }
-    .deductible{
+    .deductible {
         max-width: 290px;
     }
 }
@@ -371,7 +373,7 @@ body {
 /* End of Homepage */
 
 /* Dictionary Page */
-.dicTitle{
+.dicTitle {
     background-color: #005FAC;
     height: 30vh;
     display: flex;
@@ -379,7 +381,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-.dicTitle h1{
+.dicTitle h1 {
     font-size: 4rem;
     text-align: center;
     color: #ffffff;
@@ -388,22 +390,22 @@ body {
     font-weight: 400;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
-.dicContent{
+.dicContent {
     max-width: 1025px;
     margin: auto;
     padding: 2rem;
 }
-.abcContent{
+.abcContent {
     padding-right: 328px;
 }
-@media screen and (max-width:768px){
-    .dicTitle h1{
+@media screen and (max-width : 768px) {
+    .dicTitle h1 {
         font-size: 2.7rem;
     }
-    .abcContent{
+    .abcContent {
         padding: 0;
     }
-    .filter-link{
+    .filter-link {
         line-height: 1.5rem;
     }
 }
@@ -421,18 +423,18 @@ body {
     color: #333;
     cursor: pointer;
 }
-.filter-link:hover{
-    color:#005FAC;
+.filter-link:hover {
+    color: #005FAC;
     font-size: 1.1rem;
 }
 .filter-link::after {
-    content: " |"; 
+    content: " |";
 }
 
 .filter-link:last-child::after {
-    content: ""; 
+    content: "";
 }
-.clearFilter button{
+.clearFilter button {
     font-size: 1.2rem;
     margin: auto;
     display: flex;
@@ -447,14 +449,14 @@ body {
     padding: 0.5rem;
 }
 /* Filter Ends */
-.term{
+.term {
     padding: 1rem;
 }
-.term h3{
+.term h3 {
     font-size: 2.3rem;
     font-weight: bold;
 }
-.term p{
+.term p {
     font-size: 1.2rem;
     font-weight: 100;
 }
@@ -466,30 +468,43 @@ body {
 /* Deductible Page */
 
 /* The scroll indicator */
-.header {
-position: sticky;
-top: 0;
-  z-index: 1001;
-  width: 100%;
+.bar {
+    position: sticky;
+    top: 0;
+    z-index: 1001;
+    width: 100%;
 }
 
 /* The progress bar (scroll indicator) */
 .progress-bar {
-  height: 8px;
-  background: #33a3ff;
-  width: 0%;
+    height: 8px;
+    background: #33a3ff;
+    width: 0%;
 }
 
-.dedContent{
+.dedContent {
     max-width: 1025px;
     margin: auto;
     padding: 2rem;
-}
-.content{
-    padding-right: 328px;
+    display: flex;
+    flex-direction: row;
 }
 
-.dedTitle{
+
+figure#insuranceClip {
+    margin: 16px 0 16px 80px;
+    padding-top: 300px;
+    
+
+}
+figure#insuranceClip img {
+    max-width: 328px;
+}
+figcaption a{
+    margin-left: 120px;
+}
+
+.dedTitle {
     background-color: #005FAC;
     height: 30vh;
     display: flex;
@@ -497,7 +512,7 @@ top: 0;
     justify-content: center;
     align-items: center;
 }
-.dedTitle h1{
+.dedTitle h1 {
     font-size: 4rem;
     text-align: center;
     color: #ffffff;
@@ -507,76 +522,83 @@ top: 0;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-.ques h3{
+.ques h3 {
     font-size: 2.3rem;
     font-weight: bold;
 }
-.ques p{
+.ques p {
     font-size: 1.2rem;
     font-weight: 100;
 }
 
 /* Drop down specs */
 
-       
-        
-        /* Fixed sidenav, full height */
-        .qanda {
-        width: 100%;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: #e6e6e6;
-        overflow-x: hidden;
-        }
-        
-        /* Style the sidenav links and the dropdown button */
-        .qanda a, .dropdown-btn {
-        padding: 8px 8px 8px 16px;
-        text-decoration: none;
-        font-size: 20px;
-        display: block;
-        border: none;
-        background: none;
-        width: 100%;
-        text-align: left;
-        cursor: pointer;
-        outline: none;
-        font-weight: bold;
-        }
-        
-        
-        /* On mouse-over */
-        
-        
-        
-        /* Add an active class to the active dropdown button */
-        
-        /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
-        .dropdown-container {
-        display: none;
-        background-color: #ffffff;
-        margin-left: 8px;
-        margin-right: 8px;
-        margin-bottom: 8px;
-        padding: 10px 10px 10px 10px;
-        }
-        .dropdown-container p{padding: 0;
-        margin: 0;}
-        
-        /* Optional: Style the caret down icon */
-        .fa-caret-down {
-        float: right;
-        padding-right: 8px;
-        }
-        
-        /* Some media queries for responsiveness */
-        @media screen and (max-height: 750px) {
-        .qanda {padding-top: 15px;}
-        .qanda a {font-size: 18px;}
-        }
-        
-        .related > li {padding: 8px}
-        
-        
+
+
+/* Fixed sidenav, full height */
+.qanda {
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #e6e6e6;
+    overflow-x: hidden;
+}
+
+/* Style the sidenav links and the dropdown button */
+.qanda a,
+.dropdown-btn {
+    padding: 8px 8px 8px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+}
+
+
+/* On mouse-over */
+
+
+
+/* Add an active class to the active dropdown button */
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+    display: none;
+    background-color: #ffffff;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    padding: 10px 10px 10px 10px;
+}
+.dropdown-container p {
+    padding: 0;
+    margin: 0;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height : 750px) {
+    .qanda {
+        padding-top: 15px;
+    }
+    .qanda a {
+        font-size: 18px;
+    }
+}
+
+.related ul > li {
+    margin: 8px
+}
 
