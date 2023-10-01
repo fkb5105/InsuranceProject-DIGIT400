@@ -622,6 +622,25 @@ figcaption a {
 
 }
 
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
 
+.flex-container > div {
+  margin: 0px;
+  font-size: 1.2rem;
+    font-weight: 100;
+}
+.flex-container h3 {
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+figcaption a#access {
+    margin-left: 57px;
+}
+.bold {font-weight: bold;
+text-decoration: underline;}
 
 
