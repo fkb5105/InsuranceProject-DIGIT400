@@ -6,7 +6,6 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat">
         <link rel="stylesheet" href="style.css" type="text/css">
         <script src="script.js"></script>
-        
         <script src="https://kit.fontawesome.com/2b9cdc1c9a.js" crossorigin="anonymous"></script>
         <title>Erie Insurance Web Redesign Project</title>
     </head>
@@ -17,113 +16,76 @@
                     <a href="index.html">Home</a>
                     <a href="index.html#homeContent">About</a>
                     <a href="dictionary.html">Dictionary</a>
-                    <a href="accessibility.html" class="active">Accessibility</a>
                     <a href="deductible.html">Deductible</a>
+                    <a href="accessibility.html" class="active">Accessibility</a>
                     <a href="javascript:void(0);" class="icon" onclick="Menubar()">
                         <i class="fa fa-bars"></i>
                     </a>
                 </div>
                 <h1>Accessibility</h1>
             </div>
-            <div class="accContent">
-                <div class="menu-part">
-                    <h3><i class="fa-solid fa-bars fa-sm"></i>  Insurance Dictionary in Menu</h3>
-                    <div class="content">
-                        <div class="row">
-                            <div class="left">
-                                <p>First of all, the most important thing we need to change in regards of accessibility is adding a hyperlink to the <a href="dictionary.html">Insurance Dictionary</a> page. The hyperlink can be added in the hover menu of the About Erie option. Adding the dictionary page here will allow users to sipmly hover through menu and select the option rather than going the current process which is very flawed. Here is what the About Erie hover menu would look like.</p>
-                            </div>
-                            <div class="right">
-                                <div class="menu-sample">
-                                    <a>ABOUT ERIE
-                                    <i class="fas fa-chevron-down icon"></i>
-                                    </a>
-                                    <div class="submenu">
-                                        <a>The Erie Difference </a>
-                                        <a>Our History</a>
-                                        <a>Awards and Ranking</a>
-                                        <a>Careers</a>
-                                        <a>Become an ERIE agent</a>
-                                        <a href="dictionary.html">Insurance Dictionary</a>
-                                    </div>
-                                </div>
-                            </div>
+            <div class="dedContent">
+                <div class="content">
+                    <div class="ques">
+                        <h3>It's Importance</h3>
+                        <p>Accessibility is a necessity in the web developing world. It broadens the
+                            consumer umbrella to bring in new and reoccurring users. By aiding
+                            websites with easier and quicker obtainability, we give users the
+                            capability to reach the content they need. That’s why our main focus of
+                            this project is to help the overall flow of the website, to make it more
+                            effortless for everyone.</p>
+                    </div>
+                    <div class="flex-container" id="addImg">
+                        <div>
+                            <h3>How It's Shown in this Project</h3>
+                            <p>Like we said in the <span class="bold"><a href="index.html">Home
+                                        page</a></span>, we added many forms of interactivity to the
+                                website. Even the Home page of the project has features that guide
+                                the eyes to maintain interest. The Home page has a button to
+                                automatically scroll you down to the project’s About section. In the
+                                About section, there are many short clips that demonstrate the
+                                passage next and below it, keeping the user’s interest by
+                                visualizing the paragraphs. </p>
+                            <p>In the <span class="bold"><a href="dictionary.html">Dictionary
+                                        page</a></span>, we didn’t want to draw too much attention
+                                away from the terms like in the original page, since its purpose is
+                                to just define terms. To make things easier for those looking for
+                                specific terms, we added the alphabetical filter. The filter’s main
+                                objective is to shorten scrolling distance for those who have
+                                limited mobility and those who need a quick search. </p>
+                        </div>
+                        <div class="right">
+                            <figure id="insuranceClip">
+                                <img src="multimedia/accessabilityImg.png"
+                                    alt="Image of the universal handycapped symbol" />
+                                <figcaption>
+                                    <a id="access" href="https://www.w3.org/WAI/media/av/">Image
+                                        Link</a>
+                                </figcaption>
+                            </figure>
                         </div>
                     </div>
-                </div>
-                <div class="coverage">
-                    <h3><i class="fa-solid fa-car-burst fa-sm"></i>  Terms in Coverage Policy</h3>
-                    <div class="covTable">
-                        <table>
-                            <tr>
-                                <th>Policy Coverages</th>
-                                <th>Coverage Amount</th>
-                                <th>Cost</th>
-                            </tr>
-                            <tr>
-                                <td>Bodily Injury Liability 
-                                    <span class="tooltip">
-                                        <i class="fa-solid fa-circle-question" style="color: #006cd1;"></i>
-                                        <span class="tooltiptext">If you are responsible for a car accident that causes bodily injury to others, bodily injury liability coverage helps pay for the medical expenses of the people (not including you) harmed in the accident. Most states have laws that require you to have bodily injury liability coverage on your car insurance policy.</span>
-                                    </span>
-                                </td>
-                                <td>100,000/300,000</td>
-                                <td>$168.00</td>
-                            </tr>
-                            <tr>
-                                <td>Property Damage Liability 
-                                    <span class="tooltip">
-                                        <i class="fa-solid fa-circle-question" style="color: #006cd1;"></i>
-                                        <span class="tooltiptext">Property damage liability coverage is part of a car insurance policy. It helps pay to repair damage you cause to another person's vehicle or property. Property damage liability coverage is required by law in most states.</span>
-                                    </span>
-                                </td>
-                                <td>100,000</td>
-                                <td>$476.00</td>
-                            </tr>
-                            <tr>
-                                <td>Medical Expense 
-                                    <span class="tooltip">
-                                        <i class="fa-solid fa-circle-question" style="color: #006cd1;"></i>
-                                        <span class="tooltiptext">If you are hurt in a car accident, this coverage pays for your medical expenses, even if you were found at fault. It also covers injuries suffered by other passengers, as well as any funeral expenses.</span>
-                                    </span>
-                                </td>
-                                <td>5,000</td>
-                                <td>$26.00</td>
-                            </tr>
-                            <tr>
-                                <td>Tort 
-                                    <span class="tooltip">
-                                        <i class="fa-solid fa-circle-question" style="color: #006cd1;"></i>
-                                        <span class="tooltiptext">Tort, in an insurance capacity, means that the at-fault party can be held responsible for the damages or injuries they caused. If the driver or their insurance company does not pay you for the damages, tort permits you to sue.</span>
-                                </span></td>
-                                <td>Limited Tort</td>
-                                <td>Included</td>
-                            </tr>
-                            <tr>
-                                <td>Underinsured Motorists Bodily Injury 
-                                    <span class="tooltip">
-                                        <i class="fa-solid fa-circle-question" style="color: #006cd1;"></i>
-                                        <span class="tooltiptext">Let’s say you’re hurt in an automobile accident that was caused by another driver. Ideally, their bodily injury liability policy would have you covered. But what happens if the driver’s policy limits are not high enough to cover the damages to your car, or your injuries? That’s where your underinsured motorist bodily injury coverage kicks in.</span>
-                                    </span>
-                                </td>
-                                <td>100,000/300,000</td>
-                                <td>$27.00</td>
-                            </tr>
-                            <tr>
-                                <td>Uninsured Motorists Bodily Injury 
-                                    <span class="tooltip">
-                                        <i class="fa-solid fa-circle-question" style="color: #006cd1;"></i>
-                                        <span class="tooltiptext">Similar to underinsured motorist bodily injury coverage, this coverage comes into play when you’re injured in an auto accident caused by someone else. The difference is that the driver either has no insurance or committed a hit-and-run. Because they were at fault and have no insurance to help cover your medical expenses, uninsured motorist bodily injury coverage protects you from having to pay those expenses out of pocket.</span>
-                                    </span>
-                                </td>
-                                <td>100,000/300,000</td>
-                                <td>$2.00</td>
-                            </tr>
-                        </table>
+                    <div class="ques">
+                        <p>The <span class="bold"><a href="deductible.html">Deductible
+                                page</a></span> is linked from the Dictionary page to provide
+                            further information. This page really lacked interactive media. It is
+                            also where we put more variety in our pursuit of accessibility. We first
+                            added a progress bar that appears after the user starts to scroll, and
+                            it stays at the top of the screen as it grows. That and the image placed
+                            strategically lower than the users screen height will encourage the user
+                            to scroll. Soon enough, the user will find a menu of closed drop-down
+                            questions. If the user is interested, they have the option to reveal one
+                            or more answers. This drop-down helps the page seem shorter for less
+                            scrolling. The last thing on the Deductible page is the Related Topics
+                            section we added, providing links to other topics the user might find
+                            convenient.</p>
+                        <p>Lastly, the entire web project has a menu bar stuck to the top of the
+                            screen that disappears when scrolling down, but then reappears when
+                            scrolling up. The whole webpage also has paragraphs stretching the whole
+                            width of the screen to minimize height. The Dictionary page is the only
+                            exception in order to maintain the “quick and easy” feel to the
+                            definitions. </p>
                     </div>
-                </div>
-                <div class="infoTerm">
-                    <h3><i class="fa-solid fa-circle-info fa-sm"></i>  Terms Throughout the Website</h3>
                 </div>
             </div>
         </section>

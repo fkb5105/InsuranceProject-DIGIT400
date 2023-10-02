@@ -613,125 +613,34 @@ figcaption a {
 
 
 /* Start of Accessibility Page */
-.accContent{
-    max-width: 1080px;
+.accContent {
+    max-width: 1025px;
     margin: auto;
-}
-.accContent h3{
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 0;
-}
-.accContent .right{
-    margin: 0;
-}
-.accContent .left p{
-    font-size: 1.2rem;
-    font-weight: 100;
-    text-align: justify;
-}
-@media screen and (max-width:768px){
-    .accContent{
-        padding: 2rem;
-    }
-    .covTable{
-        padding: 0;
-    }
-}
-/* Sample hover menu */
-.menu-sample {
-    position: relative;
-    display: inline-block;
-}
-.menu-sample .submenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-.menu-sample:hover .submenu {
-    display: block;
-}
-.menu-sample a .icon {
-    font-size: 14px;
-    margin-left: 5px;
-    transition: transform 0.3s;
-}
-.menu-sample:hover a .icon {
-    transform: rotate(180deg);
-}
-.menu-sample a:hover .icon {
-    transform: rotate(180deg);
-}
-.menu-sample a{
-    text-decoration: none;
-    display: block;
-    padding: 0.6rem;
-    color: #000;
-}
-/* Policy coverage */
-.covTable{
-    padding-right: 200px;
-}
-table {
-    width: 60%;
-    background-color: #fff;
-    margin: 3rem auto;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    padding-right: 1.2rem;
-    padding-left: 1.2rem;
-}
-th{
-    font-weight: 1000;
-}
-table, th, td {
-    border-bottom: 1px solid rgb(158, 158, 158);
-    text-align: left;
-    
-}
-th, td {
-    padding-top: 1.2rem;
-    padding-bottom: 1.3rem;
-    text-align: left;
-}
-/* Hover text on question mark icons */
-.tooltip {
-    position: relative;
-    display: inline-block;
-}
-.tooltip .fa-circle-question {
-    cursor: pointer;
-}
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 400px;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 1rem;
-    position: absolute;
-    z-index: 1;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    transition: opacity 0.2s;
-}
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-}
-@media screen and (max-width: 540px){
-    .tooltip .tooltiptext{
-        width: 300px;
-        left: 700%;
-        font-size: 15px;
-    }
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+
 }
 
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-container > div {
+  margin: 0px;
+  font-size: 1.2rem;
+    font-weight: 100;
+}
+.flex-container h3 {
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+figcaption a#access {
+    margin-left: 57px;
+}
+.bold {font-weight: bold;
+text-decoration: underline;}
 
 
