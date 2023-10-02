@@ -660,14 +660,10 @@ text-decoration: underline;}
 .updContent .left p{
     font-size: 1.2rem;
     font-weight: 100;
-    text-align: justify;
 }
 @media screen and (max-width:768px){
     .updContent{
         padding: 2rem;
-    }
-    .covTable{
-        padding: 0;
     }
 }
 /* Sample hover menu */
@@ -730,8 +726,30 @@ th, td {
     text-align: left;
     white-space: normal;
 }
+li a{
+    text-decoration: none;
+    color: #0079c1;
+}
+@media screen and (max-width:768px){
+    .covTable{
+        padding: 0;
+    }
+    .covNeeds{
+        padding: 0;
+    }
+    table{
+        width: auto;
+    }
+    table, th, td{
+        font-size: 0.8rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .updContent .left p {
+        font-size: 1rem;
+    }
+}
 /* Hover text on question mark icons */
-/* Tooltip styles */
 .tooltip {
     position: relative;
     display: inline-block;
@@ -760,7 +778,7 @@ th, td {
     visibility: visible;
     opacity: 1;
 }
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 768px) {
     .tooltip .tooltiptext {
         width: 280px;
         position: fixed; 
